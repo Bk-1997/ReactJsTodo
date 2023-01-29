@@ -3,6 +3,7 @@ import { Button, Card, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Todo from "./Todo";
 import FormTodo from "./FormTodo";
+import MyFile from "../../mycomponents/MyFile";
 
 const MainTodo = () => {
     const [todos,setTodos] = useState([
@@ -50,6 +51,7 @@ const MainTodo = () => {
         <>
             <div className="app">
                 <div className="container">
+                  <MyFile />
                     <h1 className="text-center mb-4">TODO LIST</h1>
                     <FormTodo addTodo={addTodo} />
                     <div>
